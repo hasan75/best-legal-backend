@@ -23,7 +23,7 @@ const client = new MongoClient(uri, {
 async function run() {
   try {
     await client.connect();
-    const database = client.db('touriusm_htt');
+    const database = client.db('best_legal');
     const user_collection = database.collection('users');
     const product_collection = database.collection('services');
     const order_collection = database.collection('orders');
